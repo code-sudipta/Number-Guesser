@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="index.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2>Guess The Number Game</h2>
+        </div>
+        <div class="container">
+            <div class="diff">
+                <div class="nav"><b>DIFFICULTY</b></div>
+                <button class="diff1" onclick="easy()">Easy</button>
+                <button class="diff1" onclick="medium()">Medium</button>
+                <button class="diff1" onclick="hard()">Hard</button>
+            </div>
+            <div class="main">
+                <div class="ques"><h2 style="margin:0px; text-align: center;">Enter your Guess Below</h2><div id="level" style="align-self: center; font-size: large; color:darkorchid;">Level - Easy<br>Guess number between 1-10</div></div>
+                <form id="userForm">
+                    <input class="space" type="number" placeholder="Enter Here" id="guess"></input>
+                    <div class="btn-grp">
+                        <button class="submit" type="submit">Submit</button>
+                        <div class="reset" id="reset" onclick="reset()">Reset</div>
+                    </div>
+                </form>
+                <div class="message"><h2 id="message"></h2></div>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>All Rights Reserved © Sudipta Saha 2024</h3>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
